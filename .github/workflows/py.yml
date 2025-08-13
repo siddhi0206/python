@@ -22,3 +22,4 @@ jobs:
 
       # run first python script
       - name: Run hello.py
+        run: python hello.py
