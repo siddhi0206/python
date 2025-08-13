@@ -1,0 +1,24 @@
+name: Run Java and Python Programs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-all:
+    runs-on: ubuntu-latest
+
+    steps: 
+      # Checkout repository code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with: 
+          python-version: '3.10'
+
+      # run first python script
+      - name: Run hello.py
