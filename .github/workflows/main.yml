@@ -20,4 +20,11 @@ jobs:
 
     - name: Print today's date 
       run: date
+
+    - name: Create and display a text file
+      run: 
+        echo "This is a demo file"> demo.txt
+        cat demo.txt
+
+    
         
